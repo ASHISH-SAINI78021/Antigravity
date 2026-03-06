@@ -269,6 +269,30 @@
     gap: 1.5rem;
 }
 
+.premiumModal {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(25px);
+    width: 95%;
+    max-width: 900px;
+    max-height: 90vh;
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.6);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(99, 102, 241, 0.3) transparent;
+}
+
+.premiumModal::-webkit-scrollbar {
+    width: 6px;
+}
+
+.premiumModal::-webkit-scrollbar-thumb {
+    background: rgba(99, 102, 241, 0.3);
+    border-radius: 10px;
+}
+
 .premiumCloseBtn {
     position: absolute;
     top: 2rem;
@@ -445,14 +469,29 @@
     background: rgba(255, 255, 255, 0.03);
     padding: 1.5rem;
     border-radius: 1.5rem;
-    min-height: 150px;
+    min-height: 100px;
+    max-height: 400px;
+    overflow-y: auto;
     border: 1px solid rgba(255, 255, 255, 0.05);
+    scrollbar-width: thin;
+    scrollbar-color: rgba(99, 102, 241, 0.2) transparent;
+}
+
+.notesContainer::-webkit-scrollbar {
+    width: 4px;
+}
+
+.notesContainer::-webkit-scrollbar-thumb {
+    background: rgba(99, 102, 241, 0.2);
+    border-radius: 10px;
 }
 
 .notesText {
     color: #cbd5e1;
     line-height: 1.8;
     margin: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
 }
 
 .notesPlaceholder {

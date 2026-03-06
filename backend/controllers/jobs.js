@@ -47,6 +47,20 @@ exports.createJob = async (req, res, next) => {
         // Add user to req.body
         req.body.userId = req.user.id;
 
+        // Check for duplicates
+        const existingJob = await Job.findOne({
+            userId: req.user.id,
+            companyName: { $regex: new RegExp(`^${req.body.companyName.trim()}$`, 'i') },
+            jobTitle: { $regex: new RegExp(`^${req.body.jobTitle.trim()}$`, 'i') }
+        });
+
+        if (existingJob) {
+            return res.status(400).json({
+                success: false,
+                message: `You already have an application for ${req.body.jobTitle} at ${req.body.companyName}`
+            });
+        }
+
         const job = await Job.create(req.body);
 
         res.status(201).json({
