@@ -1,0 +1,251 @@
+.container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.card {
+    background: rgba(30, 41, 59, 0.4);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 2rem;
+    padding: 3rem;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.4);
+}
+
+.iconWrapper {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    color: white;
+    box-shadow: 0 20px 40px -10px rgba(99, 102, 241, 0.5);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    background: linear-gradient(to bottom right, #fff, #94a3b8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.infoBox {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+.shareText {
+    color: #94a3b8;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.shareText strong {
+    color: white;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.statItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #818cf8;
+    font-weight: 700;
+}
+
+.previewList {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.previewList h4 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.scrollArea {
+    max-height: 150px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.scrollArea::-webkit-scrollbar {
+    width: 4px;
+}
+
+.scrollArea::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.previewItemWrapper {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.previewItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+.previewDescription {
+    font-size: 0.75rem;
+    color: #64748b;
+    line-height: 1.4;
+    padding-left: 1.4rem;
+    margin: 0;
+}
+
+.previewTitle {
+    color: #fff;
+    font-weight: 600;
+}
+
+.previewSlash {
+    font-size: 0.75rem;
+    color: #475569;
+}
+
+.previewCompany {
+    color: #6366f1;
+    font-weight: 500;
+}
+
+.disclaimer {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 2.5rem;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.importBtn {
+    background: white;
+    color: #0f172a;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.importBtn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.importBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.cancelBtn {
+    color: #64748b;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.75rem;
+}
+
+.errorBox {
+    background: rgba(239, 68, 68, 0.1);
+    color: #f87171;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.successState,
+.errorState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.successState h2,
+.errorState h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+.successState p,
+.errorState p {
+    color: #94a3b8;
+}
+
+.backBtn {
+    margin-top: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.75rem;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #6366f1;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

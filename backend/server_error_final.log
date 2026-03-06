@@ -1,0 +1,101 @@
+﻿node : Debugger listening 
+on ws://127.0.0.1:54768/5b
+9400ac-49f4-49b2-a25f-05e0
+263711db
+At line:1 char:47
++ ... install 
+multer-storage-cloudinary 
+--save; node server.js 
+2>&1 | Out-F ...
++                         
+                      
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (D  
+  ebugger listen...5f-0   
+ 5e0263711db:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+For help, see: https://nod
+ejs.org/en/docs/inspector
+
+Debugger attached.
+
+[dotenv@17.3.1] injecting env (10) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+Waiting for the debugger 
+to disconnect...
+
+node:internal/modules/cjs/
+loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 
+'multer-storage-cloudinary
+'
+Require stack:
+- E:\Projects\MERN\Job Tra
+cker\backend\config\cloudi
+nary.js
+- E:\Projects\MERN\Job Tra
+cker\backend\routes\resume
+s.js
+- E:\Projects\MERN\Job 
+Tracker\backend\server.js
+    at 
+Function._resolveFilename 
+(node:internal/modules/cjs
+/loader:1225:15)
+    at Function._load (nod
+e:internal/modules/cjs/loa
+der:1055:27)
+    at 
+TracingChannel.traceSync (
+node:diagnostics_channel:3
+22:14)
+    at wrapModuleLoad (nod
+e:internal/modules/cjs/loa
+der:220:24)
+    at Module.require (nod
+e:internal/modules/cjs/loa
+der:1311:12)
+    at require (node:inter
+nal/modules/helpers:136:16
+)
+    at Object.<anonymous> 
+(E:\Projects\MERN\Job Trac
+ker\backend\config\cloudin
+ary.js:2:31)
+    at Module._compile (no
+de:internal/modules/cjs/lo
+ader:1554:14)
+    at Object..js (node:in
+ternal/modules/cjs/loader:
+1706:10)
+    at Module.load (node:i
+nternal/modules/cjs/loader
+:1289:32) {
+  code: 
+'MODULE_NOT_FOUND',
+  requireStack: [
+    
+'E:\\Projects\\MERN\\Job T
+racker\\backend\\config\\c
+loudinary.js',
+    
+'E:\\Projects\\MERN\\Job T
+racker\\backend\\routes\\r
+esumes.js',
+    
+'E:\\Projects\\MERN\\Job T
+racker\\backend\\server.js
+'
+  ]
+}
+
+
+Node.js v22.14.0
+

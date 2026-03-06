@@ -1,0 +1,14 @@
+{
+    "name": "antigravity",
+    "version": "1.0.0",
+    "description": "Smart Job Application Operating System",
+    "main": "index.js",
+    "scripts": {
+        "server": "cd backend && npm start",
+        "client": "cd frontend && npm run dev",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}

@@ -1,0 +1,201 @@
+.container {
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header {
+    margin-bottom: 2.5rem;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    color: var(--text-muted);
+}
+
+.uploadSection {
+    margin-bottom: 3rem;
+}
+
+.uploadCard {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 1.25rem;
+    padding: 2rem;
+    max-width: 600px;
+}
+
+.uploadCard h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+}
+
+.dropZone {
+    border: 2px dashed var(--border);
+    border-radius: 0.75rem;
+    padding: 2.5rem;
+    text-align: center;
+    transition: all 0.2s;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.dropZone:hover {
+    border-color: var(--primary);
+    background: rgba(99, 102, 241, 0.05);
+}
+
+.fileInput {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.fileLabel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.uploadIcon {
+    color: var(--primary);
+}
+
+.fileName {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.uploadBtn {
+    width: 100%;
+}
+
+.resumeList h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.resumeCard {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+
+.resumeCard:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.docIcon {
+    color: #818cf8;
+}
+
+.deleteBtn {
+    background: transparent;
+    color: var(--text-muted);
+    padding: 0.4rem;
+}
+
+.deleteBtn:hover {
+    color: #ef4444;
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.cardBody h4 {
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+}
+
+.cardBody p {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.viewLink {
+    display: block;
+    text-align: center;
+    padding: 0.6rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.viewLink:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.error {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.empty {
+    padding: 4rem;
+    background: var(--bg-card);
+    border-radius: 1rem;
+    text-align: center;
+    color: var(--text-muted);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.emptyIcon {
+    opacity: 0.2;
+}

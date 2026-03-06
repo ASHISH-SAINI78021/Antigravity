@@ -1,0 +1,108 @@
+﻿node : Debugger 
+listening on ws://127.
+0.0.1:54732/7aecbc1a-2
+91a-4dc0-b3bd-5758c67b
+534a
+At line:1 char:14
++ npm install; node 
+server.js 2>&1 | 
+Out-File -FilePath 
+server_error_ne ...
++              
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (Debugger l   
+ isten...bd-5758c6    
+7b534a:String) []    
+, RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+For help, see: https:/
+/nodejs.org/en/docs/in
+spector
+
+Debugger attached.
+
+[dotenv@17.3.1] injecting env (10) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+Waiting for the 
+debugger to 
+disconnect...
+
+node:internal/modules/
+cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find 
+module 'multer-storage
+-cloudinary'
+Require stack:
+- 
+E:\Projects\MERN\Job T
+racker\backend\config\
+cloudinary.js
+- 
+E:\Projects\MERN\Job T
+racker\backend\routes\
+resumes.js
+- 
+E:\Projects\MERN\Job T
+racker\backend\server.
+js
+    at Function._resol
+veFilename (node:inter
+nal/modules/cjs/loader
+:1225:15)
+    at Function._load 
+(node:internal/modules
+/cjs/loader:1055:27)
+    at TracingChannel.
+traceSync (node:diagno
+stics_channel:322:14)
+    at wrapModuleLoad 
+(node:internal/modules
+/cjs/loader:220:24)
+    at Module.require 
+(node:internal/modules
+/cjs/loader:1311:12)
+    at require (node:i
+nternal/modules/helper
+s:136:16)
+    at 
+Object.<anonymous> 
+(E:\Projects\MERN\Job 
+Tracker\backend\config
+\cloudinary.js:2:31)
+    at 
+Module._compile (node:
+internal/modules/cjs/l
+oader:1554:14)
+    at Object..js (nod
+e:internal/modules/cjs
+/loader:1706:10)
+    at Module.load (no
+de:internal/modules/cj
+s/loader:1289:32) {
+  code: 
+'MODULE_NOT_FOUND',
+  requireStack: [
+    'E:\\Projects\\MER
+N\\Job Tracker\\backen
+d\\config\\cloudinary.
+js',
+    'E:\\Projects\\MER
+N\\Job Tracker\\backen
+d\\routes\\resumes.js'
+,
+    'E:\\Projects\\MER
+N\\Job Tracker\\backen
+d\\server.js'
+  ]
+}
+
+
+Node.js v22.14.0
+

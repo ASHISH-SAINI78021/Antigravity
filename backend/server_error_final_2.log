@@ -1,0 +1,269 @@
+﻿node : Debugger listening 
+on ws://127.0.0.1:54790/5a
+5217d6-4b29-4c54-b08c-a7c4
+8ebc80e3
+At line:1 char:59
++ ... 
+er-storage-cloudinary 
+--legacy-peer-deps; node 
+server.js 2>&1 | Out-F ...
++                         
+                      
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (D  
+  ebugger listen...8c-a   
+ 7c48ebc80e3:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+For help, see: https://nod
+ejs.org/en/docs/inspector
+
+Debugger attached.
+
+[dotenv@17.3.1] injecting env (10) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+Server running in development mode on port 5000
+MongoDB Connected: localhost
+TypeError: Cannot set 
+property query of 
+#<IncomingMessage> which 
+has only a getter
+    at 
+E:\Projects\MERN\Job Track
+er\backend\node_modules\ex
+press-mongo-sanitize\index
+.js:113:18
+    at Array.forEach 
+(<anonymous>)
+    at 
+E:\Projects\MERN\Job Track
+er\backend\node_modules\ex
+press-mongo-sanitize\index
+.js:110:44
+    at 
+Layer.handleRequest 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\lib\layer.js:152:17)
+    at trimPrefix 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\index.js:342:13)
+    at 
+E:\Projects\MERN\Job Track
+er\backend\node_modules\ro
+uter\index.js:297:9
+    at processParams 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\index.js:582:12)
+    at next 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\index.js:291:5)
+    at cookieParser 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\c
+ookie-parser\index.js:57:1
+4)
+    at 
+Layer.handleRequest 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\lib\layer.js:152:17)
+
+TypeError: Cannot set 
+property query of 
+#<IncomingMessage> which 
+has only a getter
+    at 
+E:\Projects\MERN\Job Track
+er\backend\node_modules\ex
+press-mongo-sanitize\index
+.js:113:18
+    at Array.forEach 
+(<anonymous>)
+    at 
+E:\Projects\MERN\Job Track
+er\backend\node_modules\ex
+press-mongo-sanitize\index
+.js:110:44
+    at 
+Layer.handleRequest 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\lib\layer.js:152:17)
+    at trimPrefix 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\index.js:342:13)
+    at 
+E:\Projects\MERN\Job Track
+er\backend\node_modules\ro
+uter\index.js:297:9
+    at processParams 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\index.js:582:12)
+    at next 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\index.js:291:5)
+    at cookieParser 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\c
+ookie-parser\index.js:57:1
+4)
+    at 
+Layer.handleRequest 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\lib\layer.js:152:17)
+
+TypeError: Cannot set 
+property query of 
+#<IncomingMessage> which 
+has only a getter
+    at 
+E:\Projects\MERN\Job Track
+er\backend\node_modules\ex
+press-mongo-sanitize\index
+.js:113:18
+    at Array.forEach 
+(<anonymous>)
+    at 
+E:\Projects\MERN\Job Track
+er\backend\node_modules\ex
+press-mongo-sanitize\index
+.js:110:44
+    at 
+Layer.handleRequest 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\lib\layer.js:152:17)
+    at trimPrefix 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\index.js:342:13)
+    at 
+E:\Projects\MERN\Job Track
+er\backend\node_modules\ro
+uter\index.js:297:9
+    at processParams 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\index.js:582:12)
+    at next 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\index.js:291:5)
+    at cookieParser 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\c
+ookie-parser\index.js:57:1
+4)
+    at 
+Layer.handleRequest 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\lib\layer.js:152:17)
+
+TypeError: Cannot set 
+property query of 
+#<IncomingMessage> which 
+has only a getter
+    at 
+E:\Projects\MERN\Job Track
+er\backend\node_modules\ex
+press-mongo-sanitize\index
+.js:113:18
+    at Array.forEach 
+(<anonymous>)
+    at 
+E:\Projects\MERN\Job Track
+er\backend\node_modules\ex
+press-mongo-sanitize\index
+.js:110:44
+    at 
+Layer.handleRequest 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\lib\layer.js:152:17)
+    at trimPrefix 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\index.js:342:13)
+    at 
+E:\Projects\MERN\Job Track
+er\backend\node_modules\ro
+uter\index.js:297:9
+    at processParams 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\index.js:582:12)
+    at next 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\index.js:291:5)
+    at cookieParser 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\c
+ookie-parser\index.js:57:1
+4)
+    at 
+Layer.handleRequest 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\lib\layer.js:152:17)
+
+TypeError: Cannot set 
+property query of 
+#<IncomingMessage> which 
+has only a getter
+    at 
+E:\Projects\MERN\Job Track
+er\backend\node_modules\ex
+press-mongo-sanitize\index
+.js:113:18
+    at Array.forEach 
+(<anonymous>)
+    at 
+E:\Projects\MERN\Job Track
+er\backend\node_modules\ex
+press-mongo-sanitize\index
+.js:110:44
+    at 
+Layer.handleRequest 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\lib\layer.js:152:17)
+    at trimPrefix 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\index.js:342:13)
+    at 
+E:\Projects\MERN\Job Track
+er\backend\node_modules\ro
+uter\index.js:297:9
+    at processParams 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\index.js:582:12)
+    at next 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\index.js:291:5)
+    at cookieParser 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\c
+ookie-parser\index.js:57:1
+4)
+    at 
+Layer.handleRequest 
+(E:\Projects\MERN\Job Trac
+ker\backend\node_modules\r
+outer\lib\layer.js:152:17)
+
