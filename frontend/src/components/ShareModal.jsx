@@ -24,7 +24,9 @@ const ShareModal = ({ onClose }) => {
     };
 
     const copyToClipboard = () => {
-        const url = `${window.location.origin}/import/${shareData.token}`;
+        const frontendUrl = import.meta.env.VITE_FRONTEND_URL || window.location.origin;
+        console.log('Share URL Origin:', frontendUrl);
+        const url = `${frontendUrl}/import/${shareData.token}`;
         navigator.clipboard.writeText(url);
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
@@ -73,7 +75,7 @@ const ShareModal = ({ onClose }) => {
                         <div className={styles.urlBox}>
                             <input
                                 readOnly
-                                value={`${window.location.origin}/import/${shareData.token}`}
+                                value={`${import.meta.env.VITE_FRONTEND_URL || window.location.origin}/import/${shareData.token}`}
                             />
                             <button onClick={copyToClipboard} className={styles.copyBtn}>
                                 {copied ? <Check size={18} /> : <Copy size={18} />}

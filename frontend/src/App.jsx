@@ -10,6 +10,7 @@ import Jobs from './pages/Jobs';
 import ImportPage from './pages/ImportPage';
 import PrepHub from './pages/PrepHub';
 import PrepRoom from './pages/PrepRoom';
+import JoinRoom from './pages/JoinRoom';
 import Resumes from './pages/Resumes';
 import Settings from './pages/Settings';
 
@@ -29,6 +30,7 @@ function App() {
                             <Route path="/jobs" element={<Jobs />} />
                             <Route path="/import/:token" element={<ImportPage />} />
                             <Route path="/prep" element={<PrepHub />} />
+                            <Route path="/prep/join/:roomCode" element={<JoinRoom />} />
                             <Route path="/prep/:roomId" element={<PrepRoom />} />
                             <Route path="/resumes" element={<Resumes />} />
                             <Route path="/settings" element={<Settings />} />

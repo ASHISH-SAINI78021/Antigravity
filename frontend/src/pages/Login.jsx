@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import styles from './Auth.module.css';
 
@@ -8,12 +8,15 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const { login, error } = useAuth();
     const navigate = useNavigate();
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || '/dashboard';
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
             await login(email, password);
-            navigate('/dashboard');
+            navigate(from, { replace: true });
         } catch (err) {
             console.error(err);
         }

@@ -11,7 +11,8 @@ import {
     ArrowLeft,
     Clock,
     User as UserIcon,
-    AlertCircle
+    AlertCircle,
+    Share2
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import axios from 'axios';
@@ -25,7 +26,17 @@ const PrepRoom = () => {
     const [newTaskTitle, setNewTaskTitle] = useState('');
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
+    const [copySuccess, setCopySuccess] = useState(false);
     const socketRef = useRef();
+
+    const handleShare = () => {
+        const frontendUrl = import.meta.env.VITE_FRONTEND_URL || window.location.origin;
+        console.log('Sharing Link Origin:', frontendUrl);
+        const joinLink = `${frontendUrl}/prep/join/${room.code}`;
+        navigator.clipboard.writeText(joinLink);
+        setCopySuccess(true);
+        setTimeout(() => setCopySuccess(false), 2000);
+    };
 
     useEffect(() => {
         const fetchRoomData = async () => {
@@ -185,6 +196,14 @@ const PrepRoom = () => {
                             <Users size={14} />
                             <span>{room?.members.length} Members Live</span>
                         </div>
+                        <button
+                            className={`${styles.shareBtnInline} ${copySuccess ? styles.success : ''}`}
+                            onClick={handleShare}
+                            title="Copy Share Link"
+                        >
+                            <Share2 size={14} />
+                            <span>{copySuccess ? 'Link Copied!' : 'Share Link'}</span>
+                        </button>
                     </div>
                 </div>
             </header>
