@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
     const [error, setError] = useState(null);
 
     // Set axios defaults
-    axios.defaults.baseURL = '/api';
+    axios.defaults.baseURL = import.meta.env.VITE_API_URL || '/api';
     axios.defaults.withCredentials = true;
 
     useEffect(() => {
